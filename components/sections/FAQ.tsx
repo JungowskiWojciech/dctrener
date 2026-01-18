@@ -29,7 +29,7 @@ export function FAQ() {
     ]
 
     return (
-        <section className="py-20 bg-background">
+        <section className="pb-12 pt-0 bg-background">
             <div className="container max-w-3xl">
                 <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-center mb-12">
                     Częste <span className="text-primary">Pytania</span>

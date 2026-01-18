@@ -37,7 +37,7 @@ export function Contact() {
     }
 
     return (
-        <section id="kontakt" className="py-20 md:py-28 bg-muted/30">
+        <section id="kontakt" className="py-12 md:py-20 bg-muted/30">
             <div className="container space-y-12">
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Contact Info */}
@@ -129,7 +129,7 @@ export function Contact() {
                 {/* Google Map Full Width (Inside Container) */}
                 <div className="relative aspect-video w-full rounded-2xl overflow-hidden border bg-background shadow-sm">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.4357282836942!2d21.0122!3d52.2297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa%2C%20Polska!5e0!3m2!1spl!2spl!4v1620000000000!5m2!1spl!2spl"
+                        src="https://maps.google.com/maps?q=Magnum+Fitness+Gdańsk+Jabłoniowa+29a&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
@@ -139,7 +139,7 @@ export function Contact() {
                         className="absolute inset-0"
                     ></iframe>
                     <div className="absolute bottom-4 right-4 bg-background/90 p-2 rounded text-xs font-medium flex items-center gap-1 backdrop-blur ring-1 ring-border">
-                        <MapPin className="h-4 w-4 text-primary" /> Studio Treningowe, Warszawa
+                        <MapPin className="h-4 w-4 text-primary" /> Magnum Fitness, Gdańsk (ul. Jabłoniowa 29a)
                     </div>
                 </div>
             </div>

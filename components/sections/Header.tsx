@@ -23,10 +23,16 @@ export function Header() {
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="flex items-center gap-2 font-black text-2xl uppercase tracking-tighter"
+                    className="flex items-center gap-2"
                 >
-                    <Dumbbell className="h-8 w-8 text-primary" />
-                    <span>Trener<span className="text-primary">X</span></span>
+                    <div className="relative h-12 w-auto aspect-square rounded-full overflow-hidden border-2 border-primary/20">
+                        <img
+                            src="/logo.jpg"
+                            alt="DC Trener Logo"
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
+                    <span className="font-black text-2xl uppercase tracking-tighter">DC <span className="text-primary">Trener</span></span>
                 </motion.div>
 
                 {/* Desktop Nav */}

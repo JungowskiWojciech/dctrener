@@ -45,7 +45,7 @@ export function Programs() {
     ]
 
     return (
-        <section id="programy" className="py-20 md:py-28 bg-muted/30">
+        <section id="programy" className="py-12 md:py-20 bg-muted/30">
             <div className="container">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-4">
