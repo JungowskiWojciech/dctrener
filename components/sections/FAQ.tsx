@@ -12,24 +12,20 @@ export function FAQ() {
     const faqs = [
         {
             question: "Czy muszę mieć karnet na siłownię?",
-            answer: "Nie! Prowadzę podopiecznych trenujących w domu, w plenerze oraz na siłowni. Plan dostosowuję do sprzętu, który posiadasz."
+            answer: "Nie musisz kupować go wcześniej. Możesz zakupić wejście bezpośrednio w siłowni. Honorujemy również karty partnerskie: MultiSport, Medicover Sport, PZU Sport itp."
         },
         {
-            question: "Dla kogo jest współpraca online?",
-            answer: "Dla każdego, kto chce osiągnąć cel bez zgadywania. Niezależnie czy jesteś początkujący, czy zaawansowany - dobiorę plan do Twoich możliwości."
+            question: "Jak wygląda współpraca?",
+            answer: "To treningi personalne 1:1, w których dbam o Twój progres, bezpieczeństwo i odpowiedni plan. Prowadzę również treningi DUO dla par lub znajomych o podobnym celu i poziomie zaawansowania (po wcześniejszej weryfikacji)."
         },
         {
-            question: "Jak wygląda kontakt z trenerem?",
-            answer: "W pakiecie Współpraca 1:1 jestem dostępny na WhatsApp w dni robocze 9-17. Odpisuję na bieżąco, analizuję Twoje filmy z techniki i motywuję."
-        },
-        {
-            question: "Ile czasu muszę czekać na plan?",
-            answer: "Po wypełnieniu ankiety wstępnej, plan otrzymasz w ciągu 3 dni roboczych."
+            question: "Dostępność i Grafik",
+            answer: "Kwestia grafiku jest ustalana indywidualnie, biorąc pod uwagę Twoje możliwości czasowe. Grafik układam z tygodnia na tydzień, aby każdy znalazł dogodny termin na trening."
         }
     ]
 
     return (
-        <section className="pb-12 pt-0 bg-background">
+        <section className="pb-12 pt-12 mt-12 bg-background">
             <div className="container max-w-3xl">
                 <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-center mb-12">
                     Częste <span className="text-primary">Pytania</span>

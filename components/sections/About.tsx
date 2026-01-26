@@ -1,5 +1,7 @@
 
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export function About() {
     return (
@@ -44,7 +46,12 @@ export function About() {
                         <p className="mt-4">
                             Stawiam na indywidualne podejście. Każdy plan jest dopasowany do Twoich celów. Wierzę, że każdy trening to krok w stronę lepszej wersji siebie.
                         </p>
-                        <p className="font-bold text-primary text-xl">
+                        <div className="pt-4">
+                            <Button variant="outline" asChild>
+                                <Link href="/certyfikaty">Zobacz moje Certyfikaty</Link>
+                            </Button>
+                        </div>
+                        <p className="font-bold text-primary text-xl mt-4">
                             Zmień nawyki. Zobacz różnicę.
                         </p>
                     </div>

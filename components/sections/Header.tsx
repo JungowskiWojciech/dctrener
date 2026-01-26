@@ -11,10 +11,11 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
     const navItems = [
-        { name: "O mnie", href: "#o-mnie" },
-        //   { name: "Programy", href: "#programy" }, // Removed
-        { name: "Metamorfozy", href: "#metamorfozy" },
-        { name: "Kontakt", href: "#kontakt" },
+        { name: "O mnie", href: "/#o-mnie" },
+        { name: "Metamorfozy", href: "/#metamorfozy" },
+        { name: "Certyfikaty", href: "/certyfikaty" },
+        { name: "Opinie", href: "/#opinie" },
+        { name: "Kontakt", href: "/#kontakt" },
     ]
 
     return (
@@ -25,14 +26,16 @@ export function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     className="flex items-center gap-2"
                 >
-                    <div className="relative h-12 w-auto aspect-square rounded-full overflow-hidden border-2 border-primary/20">
-                        <img
-                            src="/logo.jpg"
-                            alt="DC Trener Logo"
-                            className="h-full w-full object-cover"
-                        />
-                    </div>
-                    <span className="font-black text-2xl uppercase tracking-tighter">DC <span className="text-primary">Trener</span></span>
+                    <Link href="/" className="flex items-center gap-2">
+                        <div className="relative h-12 w-auto aspect-square rounded-full overflow-hidden border-2 border-primary/20">
+                            <img
+                                src="/logo.jpg"
+                                alt="DC Trener Logo"
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
+                        <span className="font-black text-2xl uppercase tracking-tighter">DC <span className="text-primary">Trener</span></span>
+                    </Link>
                 </motion.div>
 
                 {/* Desktop Nav */}

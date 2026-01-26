@@ -35,8 +35,9 @@ export function Hero() {
                 >
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-white mb-6 leading-[1.1]">
-                        Zbuduj <br />
-                        <span className="text-primary">Formę Życia</span>
+                        Zmień <br />
+                        <span className="text-primary">Nawyki,</span> <br />
+                        Zobacz Różnicę
                     </h1>
 
                     <p className="text-base md:text-xl text-gray-300 mb-8 font-light leading-relaxed max-w-lg">

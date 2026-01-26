@@ -6,6 +6,8 @@ import { Transformations } from "@/components/sections/Transformations"
 import { Contact } from "@/components/sections/Contact"
 import { FAQ } from "@/components/sections/FAQ"
 import { Calculator } from "@/components/sections/Calculator"
+import { Certificates } from "@/components/sections/Certificates"
+import { Reviews } from "@/components/sections/Reviews"
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <About />
       <Calculator />
       <Transformations />
+      <Reviews />
       <FAQ />
       <Contact />
     </div>
