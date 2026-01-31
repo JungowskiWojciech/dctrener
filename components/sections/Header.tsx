@@ -7,6 +7,7 @@ import { Menu, X, Dumbbell } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
+import { smoothScrollTo } from "@/lib/utils/scroll"
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -27,7 +28,12 @@ export function Header() {
                     animate={{ opacity: 1, x: 0 }}
                     className="flex items-center gap-2"
                 >
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href="/" className="flex items-center gap-2" onClick={(e) => {
+                        if (window.location.pathname === "/") {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }
+                    }}>
                         <div className="relative h-12 w-12 rounded-full overflow-hidden border-2 border-primary/20">
                             <Image
                                 src="/logo.jpg"
@@ -48,6 +54,11 @@ export function Header() {
                         <div key={item.name} className="relative group">
                             <Link
                                 href={item.href}
+                                onClick={(e) => {
+                                    if (window.location.pathname === "/" && item.href.startsWith("/#")) {
+                                        smoothScrollTo(e, item.href.replace("/#", ""))
+                                    }
+                                }}
                                 className="text-sm font-bold uppercase tracking-wide text-gray-300 transition-colors hover:text-white"
                             >
                                 {item.name}
@@ -56,7 +67,13 @@ export function Header() {
                         </div>
                     ))}
                     <Button variant="default" className="rounded-full font-bold px-6" asChild>
-                        <Link href="#kontakt">Darmowa Konsultacja</Link>
+                        <Link href="/#kontakt" onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                                smoothScrollTo(e, "kontakt");
+                            }
+                        }}>
+                            Darmowa Konsultacja
+                        </Link>
                     </Button>
                 </nav>
 
@@ -83,14 +100,26 @@ export function Header() {
                                 <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="text-lg font-bold uppercase text-gray-200 hover:text-primary transition-colors"
-                                    onClick={() => setIsOpen(false)}
+                                    className="text-lg font-bold uppercase text-gray-200 hover:text-primary transition-colors block p-2"
+                                    onClick={(e) => {
+                                        setIsOpen(false);
+                                        if (window.location.pathname === "/" && item.href.startsWith("/#")) {
+                                            smoothScrollTo(e, item.href.replace("/#", ""));
+                                        }
+                                    }}
                                 >
                                     {item.name}
                                 </Link>
                             ))}
                             <Button className="w-full rounded-full text-lg py-6" asChild>
-                                <Link href="#kontakt" onClick={() => setIsOpen(false)}>Rozpocznij</Link>
+                                <Link href="/#kontakt" onClick={(e) => {
+                                    setIsOpen(false);
+                                    if (window.location.pathname === "/") {
+                                        smoothScrollTo(e, "kontakt");
+                                    }
+                                }}>
+                                    Rozpocznij
+                                </Link>
                             </Button>
                         </nav>
                     </motion.div>

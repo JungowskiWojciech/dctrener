@@ -1,6 +1,8 @@
+"use client"
 
 import { Dumbbell, Instagram, Facebook, Youtube, MapPin, Award } from "lucide-react"
 import Image from "next/image"
+import { smoothScrollTo } from "@/lib/utils/scroll"
 
 export function Footer() {
     return (
@@ -22,10 +24,10 @@ export function Footer() {
                 <div className="space-y-4">
                     <h3 className="font-semibold text-foreground">Nawigacja</h3>
                     <ul className="space-y-2 text-sm">
-                        <li><a href="#o-mnie" className="hover:text-primary">O mnie</a></li>
-                        <li><a href="#metamorfozy" className="hover:text-primary">Metamorfozy</a></li>
-                        <li><a href="#opinie" className="hover:text-primary">Opinie</a></li>
-                        <li><a href="#kontakt" className="hover:text-primary">Kontakt</a></li>
+                        <li><a href="/#o-mnie" className="hover:text-primary" onClick={(e) => { if (window.location.pathname === "/") smoothScrollTo(e, "o-mnie") }}>O mnie</a></li>
+                        <li><a href="/#metamorfozy" className="hover:text-primary" onClick={(e) => { if (window.location.pathname === "/") smoothScrollTo(e, "metamorfozy") }}>Metamorfozy</a></li>
+                        <li><a href="/#opinie" className="hover:text-primary" onClick={(e) => { if (window.location.pathname === "/") smoothScrollTo(e, "opinie") }}>Opinie</a></li>
+                        <li><a href="/#kontakt" className="hover:text-primary" onClick={(e) => { if (window.location.pathname === "/") smoothScrollTo(e, "kontakt") }}>Kontakt</a></li>
                     </ul>
                 </div>
 

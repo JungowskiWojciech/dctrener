@@ -31,10 +31,17 @@ export function MobileConsultationCTA() {
                     exit={{ y: 100 }}
                     className="fixed bottom-0 left-0 right-0 z-40 p-4 bg-black/80 backdrop-blur-xl border-t border-white/10 md:hidden pb-safe"
                 >
-                    <Button className="w-full rounded-full shadow-lg shadow-primary/20 text-lg font-bold py-6" asChild>
-                        <Link href="#kontakt">
-                            Darmowa Konsultacja
-                        </Link>
+                    <Button
+                        className="w-full rounded-full shadow-lg shadow-primary/20 text-lg font-bold py-6"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const contactSection = document.getElementById("kontakt");
+                            if (contactSection) {
+                                contactSection.scrollIntoView({ behavior: "smooth" });
+                            }
+                        }}
+                    >
+                        Darmowa Konsultacja
                     </Button>
                 </motion.div>
             )}

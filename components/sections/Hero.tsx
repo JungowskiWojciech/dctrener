@@ -4,6 +4,7 @@
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { smoothScrollTo } from "@/lib/utils/scroll"
 
 export function Hero() {
     return (
@@ -54,11 +55,11 @@ export function Hero() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Button size="default" className="md:h-12 md:px-8 text-sm md:text-lg h-auto py-3 rounded-full font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform" asChild>
-                            <a href="#kontakt">Rozpocznij Współpracę</a>
+                        <Button size="default" className="md:h-12 md:px-8 text-sm md:text-lg h-auto py-3 rounded-full font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform" onClick={(e) => smoothScrollTo(e, "kontakt")}>
+                            Rozpocznij Współpracę
                         </Button>
-                        <Button size="default" variant="outline" className="md:h-12 md:px-8 text-sm md:text-lg h-auto py-3 rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white" asChild>
-                            <a href="#metamorfozy">Zobacz Efekty</a>
+                        <Button size="default" variant="outline" className="md:h-12 md:px-8 text-sm md:text-lg h-auto py-3 rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white" onClick={(e) => smoothScrollTo(e, "metamorfozy")}>
+                            Zobacz Efekty
                         </Button>
                     </div>
                 </motion.div>
