@@ -54,7 +54,6 @@ export default function RootLayout({
         <Footer />
         <SocialSidebar />
         <MobileConsultationCTA />
-        <JsonLd />
       </body>
     </html>
   );
