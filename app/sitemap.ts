@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://dctrener.pl' // Replace with actual domain when deployed but this is good for now
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://dctrener.vercel.app'
 
     return [
         {

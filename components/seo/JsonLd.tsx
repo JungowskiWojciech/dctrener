@@ -3,9 +3,9 @@ export function JsonLd() {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Dawid Chlewicki - Trener Personalny",
-        "image": "https://dctrener.pl/logo.jpg",
+        "image": "/logo.jpg",
         "description": "Profesjonalne treningi personalne i plany żywieniowe w Gdańsku. Pomagam osiągnąć wymarzoną sylwetkę, zredukować wagę i poprawić zdrowie.",
-        "url": "https://dctrener.pl",
+        "url": "https://dctrener.vercel.app",
         "telephone": "+48123456789",
         "priceRange": "$$",
         "address": {
