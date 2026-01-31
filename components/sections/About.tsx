@@ -11,7 +11,7 @@ export function About() {
                 <div className="relative aspect-square md:aspect-[3/4] rounded-2xl overflow-hidden bg-muted shadow-2xl skew-y-1">
                     <Image
                         src="/uploaded_image_1_1768416073171.jpg" // Using new batch image
-                        alt="Trener personalny"
+                        alt="Dawid Chlewicki - Certyfikowany Trener Personalny REPs Polska"
                         fill
                         className="object-cover"
                     />

@@ -3,25 +3,34 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function Hero() {
     return (
         <section className="relative mt-20 min-h-[60vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden bg-black">
             {/* Mobile Background Image (< 768px) */}
-            <div
-                className="absolute inset-0 z-0 bg-no-repeat bg-cover bg-[center_top] md:hidden"
-                style={{
-                    backgroundImage: "url('/uploaded_image_4_1768416073171.jpg')",
-                }}
-            />
+            <div className="absolute inset-0 z-0 md:hidden">
+                <Image
+                    src="/uploaded_image_4_1768416073171.jpg"
+                    alt="Dawid Chlewicki Trener Personalny - trening na siłowni"
+                    fill
+                    priority
+                    className="object-cover object-[center_top]"
+                    sizes="100vw"
+                />
+            </div>
 
             {/* Desktop Background Image (>= 768px) */}
-            <div
-                className="hidden md:block absolute inset-0 z-0 bg-no-repeat bg-cover bg-[center_top] md:bg-fixed"
-                style={{
-                    backgroundImage: "url('/uploaded_image_1768417739174.jpg')", // New desktop image
-                }}
-            />
+            <div className="hidden md:block absolute inset-0 z-0">
+                <Image
+                    src="/uploaded_image_1768417739174.jpg"
+                    alt="Dawid Chlewicki Trener Personalny - profesjonalny trening siłowy"
+                    fill
+                    priority
+                    className="object-cover object-[center_top]"
+                    sizes="100vw"
+                />
+            </div>
 
             {/* Overlay gradient */}
             <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />

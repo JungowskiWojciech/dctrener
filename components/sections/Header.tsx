@@ -2,6 +2,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X, Dumbbell } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -27,11 +28,14 @@ export function Header() {
                     className="flex items-center gap-2"
                 >
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="relative h-12 w-auto aspect-square rounded-full overflow-hidden border-2 border-primary/20">
-                            <img
+                        <div className="relative h-12 w-12 rounded-full overflow-hidden border-2 border-primary/20">
+                            <Image
                                 src="/logo.jpg"
                                 alt="DC Trener Logo"
-                                className="h-full w-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 48px, 48px"
+                                priority
                             />
                         </div>
                         <span className="font-black text-2xl uppercase tracking-tighter">DC <span className="text-primary">Trener</span></span>
