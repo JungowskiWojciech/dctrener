@@ -8,19 +8,19 @@ export function Transformations() {
             id: 1,
             name: "Podopieczny 1",
             image: "/transformations/transformation-1.jpg",
-            desc: "Przemiana sylwetki."
+            desc: "Budowa masy mięśniowej"
         },
         {
             id: 2,
             name: "Podopieczny 2",
             image: "/transformations/transformation-2.jpg",
-            desc: "Redukcja wagi."
+            desc: "Rekompozycja - utrzymanie wagi"
         },
         {
             id: 3,
             name: "Podopieczny 3",
             image: "/transformations/transformation-3.jpg",
-            desc: "Kompleksowa metamorfoza."
+            desc: "Redukcja - Kompleksowa metamorfoza"
         }
     ]
 

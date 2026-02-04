@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 export function Calculator() {
-    const [mode, setMode] = useState<"bmi" | "calories">("bmi")
+    const [mode, setMode] = useState<"bmi" | "calories">("calories")
 
     // Shared state
     const [weight, setWeight] = useState("")
@@ -94,15 +94,6 @@ export function Calculator() {
                     {/* Tabs */}
                     <div className="flex border-b border-white/5">
                         <button
-                            onClick={() => setMode("bmi")}
-                            className={`flex-1 py-4 text-sm font-bold uppercase tracking-wider transition-colors ${mode === "bmi"
-                                ? "bg-primary/10 text-primary border-b-2 border-primary"
-                                : "bg-transparent text-muted-foreground hover:bg-white/5"
-                                }`}
-                        >
-                            Kalkulator BMI
-                        </button>
-                        <button
                             onClick={() => setMode("calories")}
                             className={`flex-1 py-4 text-sm font-bold uppercase tracking-wider transition-colors ${mode === "calories"
                                 ? "bg-primary/10 text-primary border-b-2 border-primary"
@@ -110,6 +101,15 @@ export function Calculator() {
                                 }`}
                         >
                             Zapotrzebowanie Kaloryczne
+                        </button>
+                        <button
+                            onClick={() => setMode("bmi")}
+                            className={`flex-1 py-4 text-sm font-bold uppercase tracking-wider transition-colors ${mode === "bmi"
+                                ? "bg-primary/10 text-primary border-b-2 border-primary"
+                                : "bg-transparent text-muted-foreground hover:bg-white/5"
+                                }`}
+                        >
+                            Kalkulator BMI
                         </button>
                     </div>
 
