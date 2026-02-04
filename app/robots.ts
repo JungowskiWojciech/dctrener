@@ -5,8 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/private/', // Example of disallowed path
         },
-        sitemap: 'https://dctrener.pl/sitemap.xml',
+        sitemap: 'https://www.dctrener.pl/sitemap.xml',
     }
 }

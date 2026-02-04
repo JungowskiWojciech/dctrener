@@ -53,13 +53,13 @@ export function Contact() {
 
                         <div className="space-y-4">
                             <Button size="lg" className="w-full md:w-auto flex flex-row items-center justify-center gap-2 text-lg h-auto py-6" asChild>
-                                <a href="sms:+48123456789" className="flex flex-row items-center justify-center gap-2 w-full">
+                                <a href="sms:+48693289125" className="flex flex-row items-center justify-center gap-2 w-full">
                                     <MessageCircle className="h-5 w-5 shrink-0" /> <span className="whitespace-nowrap">Napisz SMS</span>
                                 </a>
                             </Button>
 
                             <Button size="lg" className="w-full md:w-auto flex flex-row items-center justify-center gap-2 text-lg h-auto py-6" asChild>
-                                <a href="tel:+48123456789" className="flex flex-row items-center justify-center gap-2 w-full">
+                                <a href="tel:+48693289125" className="flex flex-row items-center justify-center gap-2 w-full">
                                     <Phone className="h-5 w-5 shrink-0" /> <span className="whitespace-nowrap">Zadzwoń</span>
                                 </a>
                             </Button>

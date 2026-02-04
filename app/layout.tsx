@@ -21,10 +21,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  metadataBase: new URL("https://www.dctrener.pl"),
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    url: "https://dctrener.vercel.app",
+    url: "https://www.dctrener.pl",
     siteName: "Dawid Chlewicki - Trener Personalny",
     title: "Dawid Chlewicki | Trener Personalny Gdańsk",
     description: "Zbuduj formę życia z profesjonalnym trenerem. Indywidualne podejście, skuteczne plany treningowe i dietetyczne.",
