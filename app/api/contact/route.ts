@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
         const data = await resend.emails.send({
             from: 'Trener Contact Form <onboarding@resend.dev>', // Free tier uses this sender or verified domain
-            to: ['your-email@example.com'], // Replace with trainer's email via ENV
+            to: ['dc.trener.chlewicki@gmail.com'], // Replace with trainer's email via ENV
             subject: `Nowe zgłoszenie: ${name} - ${goal}`,
             html: `
         <h1>Nowe zgłoszenie z Landing Page</h1>
